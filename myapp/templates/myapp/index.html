@@ -1,51 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+{% load static %}
 
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome Page</title>
-        <style>
-                body {
-                        font-family: Arial, sans-serif;
-                        text-align: center;
-                        margin: 0;
-                        padding: 0;
-                        background: url('https://images.unsplash.com/photo-1464039397811-476f652a343b?q=80&w=1468&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
-                        background-size: cover;
-                        color: #fff;
-                        /* Set text color to white for better visibility on a background image */
-                }
-
-                h1,
-                p {
-                        margin: 50px 0;
-                }
-
-                img.centered {
-                        display: block;
-                        margin: 0 auto;
-                        width: auto;
-                        height: 200px;
-                        border-radius: 20%;
-                }
-
-                /* Navigation Bar Styles */
-                nav {
-                        background-color: #000000;
-                        padding: 10px;
-                }
-
-                nav a {
-                        color: white;
-                        text-decoration: none;
-                        padding: 10px;
-                        margin: 0 10px;
-                }
-        </style>
+        <title> Welcome Page </title>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 
 <body>
+        {% block content %}
         <!-- Navigation Bar -->
         <nav>
                 <a href="#">SIMPLE DJANGO APP </a>
@@ -61,6 +24,14 @@
         <div>
                 <h1>Lets conserve nature by planting trees</h1>
         </div>
+        <footer>
+                <h3>           
+                        &copy;
+                        {% now 'Y' %}
+                        All rights reserved
+                </h3>
+        </footer>
+        {% endblock %}
 </body>
 
 </html>

@@ -5,3 +5,4 @@ project/__init__.py
 myapp/migrations
 myapp/__init__.py
 myapp/__pycache__
+pydjango
