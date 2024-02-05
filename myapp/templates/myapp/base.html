@@ -1,0 +1,33 @@
+{% load static %}
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Welcome Page </title>
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+
+        <!-- Navigation Bar -->
+        <nav>
+                <a href="#">SIMPLE DJANGO APP </a>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+        </nav>
+
+        {% block content%}
+
+        {% endblock content %}
+        <footer>
+                <h3>
+                        &copy;
+                        {% now 'Y' %}
+                        All rights reserved
+                </h3>
+        </footer>
+
+</body>
+
+</html>

@@ -1,20 +1,8 @@
+{% extends 'myapp/base.html' %}
 {% load static %}
 
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Welcome Page </title>
-        <link rel="stylesheet" href="{% static 'style.css' %}">
-</head>
-
-<body>
-        {% block content %}
-        <!-- Navigation Bar -->
-        <nav>
-                <a href="#">SIMPLE DJANGO APP </a>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-        </nav>
+       
+{% block content %}
 
         <h1>Welcome to Our Website!</h1>
         <p>This is a simple welcome page created using HTML for Django.</p>
@@ -24,14 +12,5 @@
         <div>
                 <h1>Lets conserve nature by planting trees</h1>
         </div>
-        <footer>
-                <h3>           
-                        &copy;
-                        {% now 'Y' %}
-                        All rights reserved
-                </h3>
-        </footer>
-        {% endblock %}
-</body>
 
-</html>
+ {% endblock content %}
