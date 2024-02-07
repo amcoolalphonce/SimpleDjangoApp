@@ -1,5 +1,24 @@
-{% extends 'base.html' %}
+{% extends 'myapp/base.html' %}
 
 {% block content %}
-<H3>Wows working</H3>
+
+<div class="container mt-4">
+        <!-- Product Cards -->
+        <div class="row">
+                <!--IPHONE-->
+                <div class="col-md-4 mb-4">
+                        <div class="card">
+                                <img src="https://shop.belong.com.au/cdn/shop/files/removal.ai__tmp-64a2306d1c556_0OSCKW_1445x.png?v=1688350868"
+                                        class="card-img-top" alt="iPhone 13 PRO">
+                                <div class="card-body">
+                                        <h5 class="card-title">IPhone 13 PRO</h5>
+                                        <p class="card-text">Get the latest IPhone 13 Pro now available at our shop</p>
+                                        <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <!-- End of Product Cards -->
+</div>
+
 {% endblock content %}
