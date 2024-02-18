@@ -8,3 +8,7 @@ def index(request):
  
 def about(request):
         return render(request, 'myapp/about.html')
+
+#authentivation views
+def login_user(request):
+        return render(request,'authenticaton/login.html' , {})
