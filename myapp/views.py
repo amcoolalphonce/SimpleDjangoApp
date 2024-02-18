@@ -11,4 +11,4 @@ def about(request):
 
 #authentivation views
 def login_user(request):
-        return render(request,'authenticaton/login.html' , {})
+        return render(request,'myapp/login.html' )
