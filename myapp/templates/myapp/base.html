@@ -22,13 +22,8 @@
         {% block content%}
 
         {% endblock content %}
-        <footer>
-                <h3>
-                        &copy;
-                        {% now 'Y' %}
-                        All rights reserved
-                </h3>
-        </footer>
+        {% block footer %}
+        {% endblock footer%}
 
 </body>
 
